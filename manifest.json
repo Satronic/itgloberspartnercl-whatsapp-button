@@ -1,9 +1,9 @@
 {
-  "vendor": "CHANGE_ME",
-  "name": "CHANGE_ME",
-  "version": "0.0.0",
-  "title": "CHANGE_ME",
-  "description": "CHANGE_ME",
+  "vendor": "itgloberspartnercl",
+  "name": "whatsapp-button",
+  "version": "0.0.1",
+  "title": "WhatsApp Button Component",
+  "description": "WhatsApp button that receives a phone number, a logo and a message",
   "builders": {
     "react": "3.x",
     "messages": "1.x",
