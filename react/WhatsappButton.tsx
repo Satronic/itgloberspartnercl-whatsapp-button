@@ -1,7 +1,4 @@
-import React from 'react';
+/* eslint-disable prettier/prettier */
+import WhatsappButton from './components/WhatsappButton'
 
-const WhatsappButton = () => {
-  return <h1>Hola</h1>
-}
-
-export default WhatsappButton;
+export default WhatsappButton
