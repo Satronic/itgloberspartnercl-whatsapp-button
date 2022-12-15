@@ -42,4 +42,29 @@ WhatsappButton.defaultProps = {
   height: 80,
 }
 
+// Define schema for backoffice admin
+WhatsappButton.schema = {
+  title: 'Whatsapp Button',
+  type: 'object',
+  properties: {
+    logo: {
+      title: 'Whatsapp logo',
+      type: 'string',
+      widget: {
+        'ui:widget': 'image-uploader',
+      },
+    },
+    phone: {
+      title: 'Sales support whatsapp phone',
+      type: 'string',
+    },
+    message: {
+      title: 'Message sent to client',
+      type: 'string',
+      widget: {
+        'ui:widget': 'textarea',
+      },
+    },
+  },
+}
 export default WhatsappButton
