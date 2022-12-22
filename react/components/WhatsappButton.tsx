@@ -13,13 +13,19 @@ type Props = {
 
 // Define the functional component
 const WhatsappButton = ({ logo, phone, message, width, height }: Props) => {
+  const formattedMessage = message.replace(/ /g, '%20')
+
   return (
     <>
-      <p>{logo}</p>
-      <p>{phone}</p>
-      <p>{message}</p>
-      <p>{width}</p>
-      <p>{height}</p>
+      <div className="fixed bottom-1 right-1 flex flexColumn">
+        <a
+          href={`https://wa.me/${phone}?text=${formattedMessage}`}
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          <img src={logo} width={width} height={height} alt="Whatsapp Logo" />
+        </a>
+      </div>
     </>
   )
 }
